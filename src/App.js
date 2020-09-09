@@ -13,9 +13,9 @@ class App extends Component {
         <React.Fragment>
           <NavigationBar />
             <Switch>
-              <Route exact path = "/" component ={Home} />
-              <Route exact path = "/about" component ={About} />
-              <Route exact path = "/contact" component ={Contact} />
+              <Route exact path = "/dna-converter" component ={Home} />
+              <Route exact path = "/dna-converter/about" component ={About} />
+              <Route exact path = "/dna-converter/contact" component ={Contact} />
               <Route component ={NoMatch} />
             </Switch>
         </React.Fragment>

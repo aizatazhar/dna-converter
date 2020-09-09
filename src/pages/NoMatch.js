@@ -1,8 +1,11 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
 export const NoMatch = () => (
   <div>
-    <h2> No MATCH! </h2>
+    <Container>
+      <h2> Invalid url </h2>
+    </Container>
   </div>
 )
 
