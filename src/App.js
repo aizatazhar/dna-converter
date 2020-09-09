@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import NoMatch from "./NoMatch";
-import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NoMatch from "./pages/NoMatch";
 import NavigationBar from "./components/NavigationBar";
-import Jumbotron from "./components/Jumbotron";
 
 class App extends Component {
   render() {
@@ -14,15 +12,12 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <NavigationBar />
-          <Jumbotron />
-          <Layout>
-              <Switch>
-                <Route exact path = "/" component ={Home} />
-                <Route exact path = "/about" component ={About} />
-                <Route exact path = "/contact" component ={Contact} />
-                <Route component ={NoMatch} />
-              </Switch>
-          </Layout>
+            <Switch>
+              <Route exact path = "/" component ={Home} />
+              <Route exact path = "/about" component ={About} />
+              <Route exact path = "/contact" component ={Contact} />
+              <Route component ={NoMatch} />
+            </Switch>
         </React.Fragment>
       </Router>
     );
