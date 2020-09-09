@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dna-converter/precache-manifest.0afd072c911083eb8208c3d7b6a6a3b4.js"
+  "/dna-converter/precache-manifest.401e003080bb04921e4e4a9fa73d9e81.js"
 );
 
 self.addEventListener('message', (event) => {
