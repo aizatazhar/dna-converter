@@ -9,31 +9,33 @@ const Styles = styled.div`
   .input {
     background-image: linear-gradient(to right, #073C16, #0A5C22);
     color: #ffffff;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .form-group {
-    width: 90%;
+    flex-grow:1
   }
 
   .form-control {
-    width: 90%;
     margin-right: 10px;
     border-radius: 10px;
+    flex-grow:1
   }
 
   .customButton {
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #E9A01A;
-    color: black;
-    border: 2px solid #E9A01A;
+    background: #2C5F2D;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
     border-radius: 10px;
   }
 
   .result {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #EEEEEE
   }
 `;
 
@@ -184,7 +186,6 @@ class Home extends Component {
             </Form>
           </Container>
         </div>
-
 
         <div className="result">
           <Container>
