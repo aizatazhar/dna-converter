@@ -1,4 +1,4 @@
 # DNA Converter
-Takes a given DNA strand and gives its various properties
+Website to convert DNA into mRNA and protein
 
 https://aizatazhar.github.io/dna-converter/
