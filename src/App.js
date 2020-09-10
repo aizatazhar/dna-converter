@@ -7,6 +7,10 @@ import NoMatch from "./pages/NoMatch";
 import NavigationBar from "./components/NavigationBar";
 
 class App extends Component {
+  componentDidMount() {
+    document.title = 'DNA Converter';
+  }
+
   render() {
     return (
       <Router>
