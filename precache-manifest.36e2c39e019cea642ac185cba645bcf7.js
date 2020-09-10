@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c63f68b97bfcc4ee3c0eecb474e6a04c",
+    "revision": "5d06f78817114f23b3249b2aa1eaced6",
     "url": "/dna-converter/index.html"
   },
   {
-    "revision": "a9f4e78b7f8247886cf6",
+    "revision": "766060aa6c350514713c",
     "url": "/dna-converter/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dna-converter/static/js/2.a6851bc8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9f4e78b7f8247886cf6",
-    "url": "/dna-converter/static/js/main.01b6d68f.chunk.js"
+    "revision": "766060aa6c350514713c",
+    "url": "/dna-converter/static/js/main.83a2baa0.chunk.js"
   },
   {
     "revision": "bb0cd1d69fcf5aa96209",
