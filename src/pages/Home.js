@@ -28,6 +28,7 @@ const Styles = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
     background: #eb6434;
+    font-family: Open Sans;
     color: #FFFFFF;
     border: 1px solid #eb6434;
     border-radius: 10px;
@@ -168,7 +169,7 @@ class Home extends Component {
       <Styles>
         <div className="input">
           <Container>
-            <h1>Enter your DNA strand</h1>
+            <h1 style={{fontFamily: "Montserrat"}}>Enter your DNA strand</h1>
             <Form inline>
               <Form.Group>
                 <Form.Control 

@@ -17,6 +17,8 @@ const Styles = styled.div`
   .navbar-brand, .navbar-nav .nav-link {
     color: #ffffff;
     font-size: 20px;
+    padding-left: 10px;
+    font-family: Montserrat;
   }
 
   .fa-github{
@@ -36,16 +38,15 @@ export const NavigationBar = () => (
           <NavItem>
             <Nav.Link as={Link} to="/dna-converter">Home</Nav.Link>
           </NavItem>
+
+          <NavItem>
+            <Nav.Link as={Link} to="/dna-converter/about">About</Nav.Link>
+          </NavItem>
+
           <NavItem>
             <Nav.Link href="https://github.com/aizatazhar/dna-converter">
               <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }}/>
             </Nav.Link>
-          </NavItem>
-          <NavItem>
-            <Nav.Link as={Link} to="/dna-converter/about">About</Nav.Link>
-          </NavItem>
-          <NavItem>
-            <Nav.Link as={Link} to="/dna-converter/contact">Contact</Nav.Link>
           </NavItem>
         </Nav>
       </Navbar.Collapse>

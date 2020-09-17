@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import "typeface-source-code-pro";
+import "typeface-montserrat";
+import "typeface-open-sans";
+import "typeface-roboto";
 
 ReactDOM.render(
   <React.StrictMode>
