@@ -46,7 +46,7 @@ export const About = () => (
         
         <br/>
         <center>
-          <img src={finals} width="60%" height="60%"/>
+          <img src={finals} width="60%" height="60%" alt=""/>
         </center>
         <br/>
         

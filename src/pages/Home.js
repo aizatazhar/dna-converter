@@ -93,12 +93,15 @@ class Home extends Component {
     let reversedInput = this.state.input.split("").reverse().join("");
     let reversedComplement = this.state.complement.split("").reverse().join("");
     let reversedmRNA = this.state.mRNA.split("").reverse().join("");
-    let reversedProtein = this.getProteinDetails(reversedmRNA)[0];
+    let reversedProteinDetails = this.getProteinDetails(reversedmRNA);
+    let reversedProtein = reversedProteinDetails[0];
+    let reversedProteinWeight = reversedProteinDetails[1];
     this.setState({
       input: reversedInput,
       mRNA: reversedmRNA,
       complement: reversedComplement,
       protein: reversedProtein,
+      proteinWeight: reversedProteinWeight,
     })
   }
 
