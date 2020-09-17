@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import CopyToClipboard from "react-copy-to-clipboard";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+// import bgImage from "../assets/dna.jpg";
 
 const Styles = styled.div`
   .input {
@@ -26,9 +27,9 @@ const Styles = styled.div`
   .customButton {
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #2C5F2D;
+    background: #eb6434;
     color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    border: 1px solid #eb6434;
     border-radius: 10px;
   }
 

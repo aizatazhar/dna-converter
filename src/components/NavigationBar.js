@@ -4,6 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import styled from "styled-components";
 import NavItem from "react-bootstrap/NavItem";
 import { Link } from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Styles = styled.div`
   .navbar {
@@ -14,10 +16,14 @@ const Styles = styled.div`
 
   .navbar-brand, .navbar-nav .nav-link {
     color: #ffffff;
-    &:hover {
-      color: white;
-    }
+    font-size: 20px;
   }
+
+  .fa-github{
+    &:hover{
+      color:black !important;
+    }
+ }
 `;
 
 export const NavigationBar = () => (
@@ -29,6 +35,11 @@ export const NavigationBar = () => (
         <Nav className="ml-auto">
           <NavItem>
             <Nav.Link as={Link} to="/dna-converter">Home</Nav.Link>
+          </NavItem>
+          <NavItem>
+            <Nav.Link href="https://github.com/aizatazhar/dna-converter">
+              <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }}/>
+            </Nav.Link>
           </NavItem>
           <NavItem>
             <Nav.Link as={Link} to="/dna-converter/about">About</Nav.Link>
