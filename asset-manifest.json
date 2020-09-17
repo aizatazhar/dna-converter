@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dna-converter/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/dna-converter/static/js/main.6a7d81ad.chunk.js",
-    "main.js.map": "/dna-converter/static/js/main.6a7d81ad.chunk.js.map",
+    "main.js": "/dna-converter/static/js/main.c522f930.chunk.js",
+    "main.js.map": "/dna-converter/static/js/main.c522f930.chunk.js.map",
     "runtime-main.js": "/dna-converter/static/js/runtime-main.398d0067.js",
     "runtime-main.js.map": "/dna-converter/static/js/runtime-main.398d0067.js.map",
     "static/css/2.60354dda.chunk.css": "/dna-converter/static/css/2.60354dda.chunk.css",
     "static/js/2.5aae15f6.chunk.js": "/dna-converter/static/js/2.5aae15f6.chunk.js",
     "static/js/2.5aae15f6.chunk.js.map": "/dna-converter/static/js/2.5aae15f6.chunk.js.map",
     "index.html": "/dna-converter/index.html",
-    "precache-manifest.b931643472e3f0450690f9a5fe6d416c.js": "/dna-converter/precache-manifest.b931643472e3f0450690f9a5fe6d416c.js",
+    "precache-manifest.2f22fa03477b5d37bbd5bb3375d148e1.js": "/dna-converter/precache-manifest.2f22fa03477b5d37bbd5bb3375d148e1.js",
     "service-worker.js": "/dna-converter/service-worker.js",
     "static/css/2.60354dda.chunk.css.map": "/dna-converter/static/css/2.60354dda.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/dna-converter/static/css/main.5ecd60fb.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.60354dda.chunk.css",
     "static/js/2.5aae15f6.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.6a7d81ad.chunk.js"
+    "static/js/main.c522f930.chunk.js"
   ]
 }

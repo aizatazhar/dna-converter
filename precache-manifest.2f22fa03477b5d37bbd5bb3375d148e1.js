@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a34df3c5243079269b346dbfa28efb9",
+    "revision": "db8d4d879e7e830cdd58a4bf7e6ed1cf",
     "url": "/dna-converter/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dna-converter/static/css/2.60354dda.chunk.css"
   },
   {
-    "revision": "c4d29fcb7721370cc209",
+    "revision": "8a18adc0708717bac1d6",
     "url": "/dna-converter/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dna-converter/static/js/2.5aae15f6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c4d29fcb7721370cc209",
-    "url": "/dna-converter/static/js/main.6a7d81ad.chunk.js"
+    "revision": "8a18adc0708717bac1d6",
+    "url": "/dna-converter/static/js/main.c522f930.chunk.js"
   },
   {
     "revision": "bb0cd1d69fcf5aa96209",
