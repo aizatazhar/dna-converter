@@ -25,7 +25,7 @@ const Styles = styled.div`
     &:hover{
       color:black !important;
     }
- }
+  }
 `;
 
 export const NavigationBar = () => (

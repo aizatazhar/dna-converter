@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import CopyToClipboard from "react-copy-to-clipboard";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-// import bgImage from "../assets/dna.jpg";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Styles = styled.div`
   .input {
@@ -36,7 +36,7 @@ const Styles = styled.div`
 
   .result {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 150px;
     background-color: #EEEEEE
   }
 `;
@@ -69,6 +69,7 @@ class Home extends Component {
       mRNA: "",
       protein: "",
       proteinWeight: 0,
+      gcContent : 0,
     };
   }
   
@@ -79,6 +80,7 @@ class Home extends Component {
     let proteinDetails = this.getProteinDetails(mRNA);
     let protein = proteinDetails[0];
     let proteinWeight = proteinDetails[1];
+    let gcContent = this.calculateGcContent(inputFormatted);
 
     this.setState({
       input: inputFormatted,
@@ -86,6 +88,7 @@ class Home extends Component {
       mRNA: mRNA,
       protein: protein,
       proteinWeight: proteinWeight,
+      gcContent: gcContent,
     });
   };
 
@@ -96,12 +99,14 @@ class Home extends Component {
     let reversedProteinDetails = this.getProteinDetails(reversedmRNA);
     let reversedProtein = reversedProteinDetails[0];
     let reversedProteinWeight = reversedProteinDetails[1];
+    let reversedGcContent = this.calculateGcContent(reversedInput);
     this.setState({
       input: reversedInput,
       mRNA: reversedmRNA,
       complement: reversedComplement,
       protein: reversedProtein,
       proteinWeight: reversedProteinWeight,
+      gcContent: reversedGcContent,
     })
   }
 
@@ -165,6 +170,17 @@ class Home extends Component {
       : protein
 
     return [protein, weight];
+  }
+
+  calculateGcContent(dna) {
+    let upperCaseDNA = dna.toUpperCase();
+    let count = 0;
+    for (let i = 0; i < upperCaseDNA.length; i++) {
+      if (upperCaseDNA[i] === "G" || upperCaseDNA[i] === "C") {
+        count += 1;
+      } 
+    }
+    return count/dna.length;
   }
 
   render() {
@@ -265,6 +281,37 @@ class Home extends Component {
 
             <br></br>
             <br></br>
+            
+            <h3>
+              GC content
+            </h3>
+            <Form inline>
+              <Form.Group>
+                <Form.Control 
+                  style={{fontFamily: "Source Code Pro"}} 
+                  value={this.state.gcContent} 
+                />
+                <CopyToClipboard text={this.state.gcContent.toFixed(5)}>
+                  <Button className="customButton" variant="light">Copy</Button>
+                </CopyToClipboard>
+              </Form.Group>
+            </Form>
+
+            <br></br>
+            <br></br>
+
+            <ScrollToTop/>
+
+            {/* <p>HELLO</p>
+            <p>HELLO</p>
+            <p>HELLO</p>
+            <p>HELLO</p>
+            <p>HELLO</p>
+            <p>HELLO</p>
+            <p>HELLO</p>
+            <p>HELLO</p>
+            <p>HELLO</p>
+            <p>HELLO</p> */}
           </Container>
         </div>
       </Styles>
